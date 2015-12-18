@@ -2,7 +2,7 @@ engines:
   bundler-audit:
     enabled: false
   csslint:
-    enabled: false
+    enabled: true
   coffeelint:
     enabled: false
   eslint:
@@ -10,11 +10,17 @@ engines:
   fixme:
     enabled: true
   rubocop:
-    enabled: false
+    enabled: true
   brakeman:
     enabled: false
     exclude_fingerprints:
     - 0a616a63f4f81f91e6cd422960070286
+  duplication:
+        enabled: true
+        config:
+          languages:
+          - ruby
+          - javascript
 ratings:
   paths:
   - Gemfile.lock
